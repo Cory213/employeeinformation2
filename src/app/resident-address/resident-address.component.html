@@ -1,0 +1,86 @@
+<div class="indent">
+  <div class="row">
+    <div class="col-12">
+      <h4 class="heading-bold">Resident Address</h4>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <label>Address Line 1</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.residentAddress.addressLineOne" name="addressOne" type="text" id="addressOne" required>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <label>Address Line 2</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.residentAddress.addressLineTwo" name="addressTwo" type="text" id="AddressTwo" required>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <label>Zip Code</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.residentAddress.zipCode" name="zipCode" type="text" id="zipCode" required>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <label>City</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.residentAddress.city" name="city" type="text" id="city" required>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <label>County</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.residentAddress.county" name="county" type="text" id="county" required>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+        <div class="form-group">
+          <label>State</label>
+          <select class="form-control" [(ngModel)]="employee.residentAddress.state" name="state" id="state" class="form-control" required>
+            <option value="MA">Massachusetts</option>
+            <option value="NY">New York</option>
+            <option value="RI">Rhode Island</option>
+          </select>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <button class="btn btn-secondary" (click)="back()"><i class="fa fa-chevron-left"></i> Back</button>
+      <button class="btn btn-primary" (click)="next()">Next <i class="fa fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>

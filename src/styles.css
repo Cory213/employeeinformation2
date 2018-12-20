@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+.indent {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.bg-primary {
+    background-color: #369!important;
+}
+
+.btn-primary {
+    margin-right: 10px;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #369;
+    border-color: #369;
+}
+
+.btn-primary-add {
+    color: #fff;
+    background-color: #369;
+    border-color: #369;
+}
+
+.btn-success {
+    margin-top: 50px;
+}

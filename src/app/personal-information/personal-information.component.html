@@ -1,0 +1,128 @@
+<div class="indent">
+  <div class="row">
+    <div class="col-12">
+      <h4 class="heading-bold">Personal Information</h4>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <label>First Name</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.firstName" name="firstName" type="text" id="firstName" required>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+    <label>Last Name</label>
+      <div>
+        <input class="form-control" [(ngModel)]="employee.lastName" name="lastName" type="text" id="lastName" required>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <label>Middle Name</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.middleName" name="middleName" type="text" id="middleName" required>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+    <label>Nickname</label>
+      <div>
+        <input class="form-control" [(ngModel)]="employee.nickName" name="nickname" type="text" id="nickname" required>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <label>Birthdate</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.birthDate" name="birthDate" type="text" id="birthDate" required>
+        </div>
+    </div>
+    <div class="col-12 col-md-1">
+      <div class="form-group">
+        <label>Gender</label>
+        <select class="form-control" [(ngModel)]="employee.gender" name="gender" id="gender" class="form-control">
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-12 col-md-1">
+      <div class="form-group">
+        <label>Marital Status</label>
+        <select class="form-control" [(ngModel)]="employee.maritalStatus" name="maritalStatus" id="maritalStatus" class="form-control">
+          <option value="S">Single</option>
+          <option value="M">Married</option>
+          <option value="D">Divorced</option>
+          <option value="W">Widow</option>
+          <option value="C">Civil Union</option>
+          <option value="O">Other</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <label>Social Security Number</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.SSN" name="SSN" type="text" id="SSN" required>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+    <label>Confirm: Social Security Number</label>
+      <div>
+        <input class="form-control" [(ngModel)]="confirmSSN" name="confirmSSN" type="text" id="confirmSSN" required>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <label>Home Phone</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.homePhone" name="homePhone" type="text" id="homePhone" required>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+    <label>Cell Phone</label>
+      <div>
+        <input class="form-control" [(ngModel)]="employee.cellPhone" name="cellPhone" type="text" id="cellPhone" required>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="indent">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <label>Personal Email</label>
+        <div>
+          <input class="form-control" [(ngModel)]="employee.email" name="email" type="text" id="email" required>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="indent">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <button class="btn btn-primary" (click)="next()">Next <i class="fa fa-chevron-right"></i></button>
+      </div>
+    </div>
+</div>
