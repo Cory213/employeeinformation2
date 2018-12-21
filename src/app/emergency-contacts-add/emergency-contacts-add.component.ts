@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { EmployeeInformationService } from '../employee-information.service';
+import { Employee } from '../employee';
+import { emergencyContact } from '../emergencyContact';
 
 @Component({
   selector: 'app-emergency-contacts-add',
@@ -7,9 +11,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmergencyContactsAddComponent implements OnInit {
 
-  constructor() { }
+  employee = new Employee;
+  emergencyContact = new emergencyContact;
+
+  constructor(private router: Router, private employeeInformationService: EmployeeInformationService) { }
 
   ngOnInit() {
+    this.employee = this.employeeInformationService.getEmployee();
+    this.emergencyContact = {name: '', type: '', contactInfo: '', relationship: ''}
+  }
+
+  done () {
+    this.addContact();
+    this.employeeInformationService.saveSessionStorage(this.employee).subscribe(()=>{
+      this.router.navigate(['/emergency-contacts-setup']);
+    });
+  }
+
+  cancel () {
+    this.router.navigate(['/emergency-contacts-setup']);
+  }
+
+  addContact () {
+    this.employee.emergencyContactsList.push(this.emergencyContact);
   }
 
 }

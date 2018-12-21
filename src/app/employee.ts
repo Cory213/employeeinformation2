@@ -1,5 +1,6 @@
 import { residentAddress } from './residentAddress';
 import { mailingAddress } from './mailingAddress';
+import { emergencyContact } from './emergencyContact';
 
 export class Employee {
   firstName: string;
@@ -15,5 +16,5 @@ export class Employee {
   personalEmail: string;
   residentAddress = new residentAddress;
   mailingAddress = new mailingAddress;
-  emergencyContactsList: Array<{name: string, type: string, contactInfo: string, relationship: String}>;
+  emergencyContactsList: emergencyContact[];
 }

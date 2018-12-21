@@ -18,7 +18,9 @@ export class PersonalInformationComponent implements OnInit {
 
   ngOnInit() {
     this.employee = this.employeeInformationService.getEmployee();
-    this.employee.emergencyContactsList[0] = {name: "hey", type: "hey", contactInfo: "hey", relationship: "hey"};
+    if(!this.employee.emergencyContactsList) {
+      this.employee.emergencyContactsList = [];
+    }
     console.log(this.employee);
   }
 
