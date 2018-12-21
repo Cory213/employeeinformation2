@@ -2,26 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 
-## Development server
+Thoughts after writing this test app:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+-Angular seems a lot easier to organize but at the same time requires more explicit fluff when doing certain things unlike angularJS, probably because of typescript. Talking primarily about how angry the app seems to get when you are referencing variables in the HTML that weren't properly initialized or within an included object class.
 
-## Code scaffolding
+-For some things like ng-model(angularJS) and [(ngModel)](Angular) it's really as simple as swapping how you write it in the html, but for other things like form validation (which I have next to none of in this test app besides some data initialization to avoid errors) based off my reading seem to be totally different and in a way that isn't as straightforward, but then again we have so few fields in the app due to what we're dealing with that we usually don't just require fields but require specific formats and not allow some things etc. so that's not really a problem.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-We can do some things more conveniently and easier with observables over promises, but I cant think of too many immediate uses unlike something like EP which uses observables in ways like constant updating of user notifications for stuff like messages, PTO requests (I assume) and other things. Observables are really easy to understand, though.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+-Before learning about better ways to use bootstrap recently I have some bad forced margins on buttons but also use stuff like the mt, mr stuff in bootstrap but left it in in the interest of time since it's a test app.
